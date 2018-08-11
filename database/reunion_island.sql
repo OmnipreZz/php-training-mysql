@@ -30,5 +30,14 @@ CREATE TABLE IF NOT EXISTS `hiking` (
   `distance` int(11) NOT NULL COMMENT 'in km',
   `duration` time NOT NULL,
   `height_difference` int(6) NOT NULL COMMENT 'in m',
+  `available` char(3) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+
+INSERT INTO `hiking` (`name`,`difficulty`,`distance`,`duration`,`height_difference`,`available`)
+VALUES ('La montée au Piton des Neiges','difficile',15.5,'08:00:00',1730, 'oui'),
+('La montée au Piton de la Fournaise','moyen',10.8,'05:00:00',500, 'oui'),
+('La boucle Grand Bassin et Voile de la Mariée','difficile',21.5,'06:30:00',1090, 'oui'),
+('Du Maïdo à la cascade de Trois Roches','difficile',19.5,'08:00:00',1720, 'oui'),
+('Le Dimitile','très difficile',27.5,'11:00:00',2000, 'oui');

@@ -1,5 +1,11 @@
-label, select, input{
-  width: 150px;
-  display: inline-block;
-  margin: 5px 0;
+
+nav a, td, .name {
+  color: gray;
+}
+
+form {
+  width: 600px;
+  box-shadow: 2px 2px 2px gray;
+  background: linear-gradient(#FF530D, #F6EC08);
+  color: white;
 }
